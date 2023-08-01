@@ -6,10 +6,6 @@ pipeline {
         sh 'echo hello world from build'
       }
     }
-
-  }
-
-stages {
     stage('Deploy'){
       steps{
         sh 'echo hello world from Deploy'
