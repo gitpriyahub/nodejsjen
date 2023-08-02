@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build'){
       steps{
-        sh 'sudo docker build -t DJ:$Build_Number .'
+        sh 'docker build -t DJ:$Build_Number .'
       }
     }
     stage('Deploy'){
